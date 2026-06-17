@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Sidiq Prayoga — HSE • Risk • Compliance" },
+      { title: "Sidiq Prayoga — portfolio" },
       {
         name: "description",
         content:
           "Portfolio of Sidiq Prayoga, HSE professional specializing in Safety Management Systems, Risk Management, Mining Safety Compliance, Audit, and Digital Safety Campaigns.",
       },
       { name: "author", content: "Sidiq Prayoga" },
-      { property: "og:title", content: "Sidiq Prayoga — HSE • Risk • Compliance" },
+      { property: "og:title", content: "Sidiq Prayoga — portfolio" },
       {
         property: "og:description",
         content:
@@ -93,12 +93,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Sidiq Prayoga" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Sidiq Prayoga — HSE • Risk • Compliance" },
+      { name: "twitter:title", content: "Sidiq Prayoga — portfolio" },
       {
         name: "twitter:description",
         content:
           "Building safer workplaces through systems, data, compliance, and human behavior.",
       },
+      { name: "description", content: "A premium portfolio website showcasing expertise in HSE, Risk Management, Compliance, Training, and Digital Safety." },
+      { property: "og:description", content: "A premium portfolio website showcasing expertise in HSE, Risk Management, Compliance, Training, and Digital Safety." },
+      { name: "twitter:description", content: "A premium portfolio website showcasing expertise in HSE, Risk Management, Compliance, Training, and Digital Safety." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ee195d6d-f80b-4cfc-af40-3010c8f1f199/id-preview-c221b552--8754f513-04fc-4222-a01f-b016bf187d39.lovable.app-1781668707908.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/ee195d6d-f80b-4cfc-af40-3010c8f1f199/id-preview-c221b552--8754f513-04fc-4222-a01f-b016bf187d39.lovable.app-1781668707908.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
