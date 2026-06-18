@@ -49,7 +49,7 @@ export function Experience() {
     >
       <div className="swiss-container">
         <header className="swiss-grid mb-14 items-end">
-          <div className="lg:col-span-6">
+          <div className="col-span-full lg:col-span-6">
             <span className="mono-label text-secondary">§ 04 — Career</span>
             <h2
               id="exp-title"
@@ -60,7 +60,7 @@ export function Experience() {
               Experience.
             </h2>
           </div>
-          <p className="mono-label lg:col-span-3 lg:col-start-10 text-muted-foreground">
+          <p className="col-span-full mono-label lg:col-span-3 lg:col-start-10 text-muted-foreground mt-2 lg:mt-0">
             2016 — Present · 3 Companies
           </p>
         </header>

@@ -16,7 +16,7 @@ export function Achievements() {
     <section id="work" aria-labelledby="ach-title" className="border-t border-rule py-20 md:py-28">
       <div className="swiss-container">
         <header className="swiss-grid mb-14 items-end">
-          <div className="lg:col-span-4">
+          <div className="col-span-full lg:col-span-4">
             <span className="mono-label text-secondary">§ 02 — Work</span>
             <h2
               id="ach-title"
@@ -27,9 +27,9 @@ export function Achievements() {
               Achievements
             </h2>
           </div>
-          <p className="text-base leading-relaxed text-muted-foreground lg:col-span-5 lg:col-start-8">
-            Measurable outcomes across mining, manufacturing, and power-plant operations —
-            spanning training delivery, audit performance, and behavioral safety programs.
+          <p className="col-span-full text-base leading-relaxed text-muted-foreground lg:col-span-5 lg:col-start-8">
+            Measurable outcomes across mining, manufacturing, and power-plant operations — spanning
+            training delivery, audit performance, and behavioral safety programs.
           </p>
         </header>
 
@@ -41,9 +41,7 @@ export function Achievements() {
               delay={i * 60}
               className="group relative flex flex-col justify-between border-b border-r border-rule p-6 transition-colors hover:bg-muted/60 md:p-8 min-h-[220px]"
             >
-              <span className="mono-label text-secondary">
-                {String(i + 1).padStart(2, "0")}
-              </span>
+              <span className="mono-label text-secondary">{String(i + 1).padStart(2, "0")}</span>
               <p className="mt-10 text-base font-medium leading-snug text-primary md:text-[17px]">
                 {text}
               </p>

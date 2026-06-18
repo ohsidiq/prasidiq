@@ -22,8 +22,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Sidiq Prayoga — HSE • Risk • Compliance" },
       {
         property: "og:description",
-        content:
-          "Building safer workplaces through systems, data, compliance, and human behavior.",
+        content: "Building safer workplaces through systems, data, compliance, and human behavior.",
       },
       { property: "og:url", content: "/" },
     ],

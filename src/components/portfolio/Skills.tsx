@@ -53,7 +53,7 @@ export function Skills() {
     >
       <div className="swiss-container">
         <header className="swiss-grid mb-14 items-end">
-          <div className="lg:col-span-6">
+          <div className="col-span-full lg:col-span-6">
             <span className="mono-label text-secondary">§ 06 — Capabilities</span>
             <h2
               id="skills-title"
@@ -73,9 +73,7 @@ export function Skills() {
                 <h3 className="text-sm font-semibold uppercase tracking-wider text-primary">
                   {cat.title}
                 </h3>
-                <span className="mono-label text-muted-foreground">
-                  0{i + 1}
-                </span>
+                <span className="mono-label text-muted-foreground">0{i + 1}</span>
               </div>
               <ul className="mt-6 border-t border-rule">
                 {cat.items.map((item) => (

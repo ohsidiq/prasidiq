@@ -5,6 +5,7 @@ A premium single-page portfolio in International Typographic Style. Dark text on
 ## Design system (src/styles.css)
 
 Replace the default shadcn tokens with the Swiss palette using `oklch()`:
+
 - `--background` Pure White `#FFFFFF`
 - `--foreground` Dark Gray `#111827`
 - `--primary` Deep Corporate Blue `#0A2540`
@@ -15,10 +16,12 @@ Replace the default shadcn tokens with the Swiss palette using `oklch()`:
 - Radius: `0.125rem` (Swiss = sharp corners, minimal rounding)
 
 Typography via `<link>` in `src/routes/__root.tsx` (Google Fonts):
+
 - Display/body: **Inter** (400/500/700/900)
 - Mono accents (section numbers, labels): **JetBrains Mono** 400/500
 
 Tokens in `@theme`:
+
 - `--font-sans: "Inter", "Helvetica Neue", system-ui, sans-serif`
 - `--font-mono: "JetBrains Mono", monospace`
 
@@ -27,6 +30,7 @@ Reusable utility class `.swiss-container` → `max-w-[1440px] mx-auto px-6 md:px
 ## Routing
 
 Single page at `src/routes/index.tsx`. Replace placeholder Index. Update `head()` with proper SEO:
+
 - title: `Sidiq Prayoga — HSE • Risk • Compliance`
 - description: ~155 chars summarizing experience
 - og:title / og:description / twitter:card
@@ -57,12 +61,14 @@ One generated asset: `src/assets/portrait.jpg` — monochrome editorial portrait
 ## Motion
 
 Minimal. CSS-only:
+
 - Nav: border-bottom fades in on scroll (IntersectionObserver on a sentinel).
 - Section reveal: subtle 200ms fade + 8px translateY on enter, once. Use a tiny custom hook with IntersectionObserver — no framer-motion needed to keep things lean.
 
 ## Responsive rules
 
 Follow the responsive-layout-patterns guidance:
+
 - Nav uses `grid-cols-[minmax(0,1fr)_auto]` on mobile, flex on `sm:`.
 - Hero stacks: portrait below text on mobile; side-by-side from `lg:`.
 - All multi-col grids collapse to single column < `md`.

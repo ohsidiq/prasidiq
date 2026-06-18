@@ -19,7 +19,7 @@ export function Contact() {
     >
       <div className="swiss-container">
         <div className="swiss-grid items-start">
-          <div className="lg:col-span-8">
+          <div className="col-span-full lg:col-span-8">
             <span className="mono-label text-secondary">§ 08 — Contact</span>
             <h2
               id="contact-title"
@@ -34,7 +34,7 @@ export function Contact() {
         </div>
 
         <div className="swiss-grid mt-16">
-          <dl className="lg:col-span-7 border-t border-rule">
+          <dl className="col-span-full lg:col-span-7 border-t border-rule">
             {details.map((d) => (
               <div
                 key={d.label}
@@ -54,7 +54,7 @@ export function Contact() {
             ))}
           </dl>
 
-          <div className="mt-10 lg:col-span-4 lg:col-start-9 lg:mt-0">
+          <div className="col-span-full mt-10 lg:col-span-4 lg:col-start-9 lg:mt-0">
             <span className="mono-label text-muted-foreground">Connect</span>
             <ul className="mt-4 border-t border-rule">
               {socials.map((s) => (

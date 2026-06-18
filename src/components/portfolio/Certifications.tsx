@@ -23,10 +23,7 @@ export function Certifications() {
       <div className="swiss-container">
         <header className="mb-14">
           <span className="mono-label text-accent">§ 05 — Credentials</span>
-          <h2
-            id="cert-title"
-            className="mt-4 text-4xl font-black tracking-[-0.03em] md:text-5xl"
-          >
+          <h2 id="cert-title" className="mt-4 text-4xl font-black tracking-[-0.03em] md:text-5xl">
             Professional
             <br />
             Certifications.

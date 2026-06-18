@@ -6,7 +6,7 @@ export function Hero() {
       <div className="swiss-container pt-10 pb-20 md:pt-16 md:pb-28 lg:pt-24 lg:pb-36">
         <div className="swiss-grid items-end">
           {/* Left content - 7 cols */}
-          <div className="lg:col-span-7">
+          <div className="col-span-full lg:col-span-7">
             <div className="flex items-center gap-4">
               <span className="mono-label text-secondary">§ 01 — Introduction</span>
               <span className="h-px w-16 bg-rule" />
@@ -27,14 +27,13 @@ export function Hero() {
             </p>
 
             <p className="mt-8 max-w-2xl text-xl font-medium leading-snug text-primary md:text-2xl lg:text-[1.7rem]">
-              Building safer workplaces through systems, data, compliance, and human
-              behavior.
+              Building safer workplaces through systems, data, compliance, and human behavior.
             </p>
 
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground">
-              Experienced HSE professional with expertise in Safety Management Systems,
-              Risk Management, Mining Safety Compliance, Training Development, Internal
-              Audit, and Digital Safety Campaigns.
+              Experienced HSE professional with expertise in Safety Management Systems, Risk
+              Management, Mining Safety Compliance, Training Development, Internal Audit, and
+              Digital Safety Campaigns.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-3">
@@ -62,7 +61,7 @@ export function Hero() {
           </div>
 
           {/* Right portrait - 5 cols */}
-          <div className="mt-12 lg:col-span-5 lg:mt-0">
+          <div className="col-span-full mt-12 lg:col-span-5 lg:mt-0">
             <figure className="relative">
               <div className="overflow-hidden bg-muted">
                 <img
@@ -70,7 +69,7 @@ export function Hero() {
                   alt="Portrait of Sidiq Prayoga"
                   width={800}
                   height={1024}
-                  className="block w-full grayscale"
+                  className="block w-full object-cover aspect-[4/5] max-h-[450px] lg:max-h-none transition-all duration-300"
                 />
               </div>
               <figcaption className="mt-3 flex items-center justify-between">
@@ -85,13 +84,11 @@ export function Hero() {
       {/* Marquee strip */}
       <div className="border-y border-rule bg-muted/60">
         <div className="swiss-container flex items-center justify-between gap-6 py-4 overflow-hidden">
-          {["SMKP", "ISO 45001", "ISO 14001", "ISO 9001", "SMK3", "BNSP POP", "TOT L3"].map(
-            (t) => (
-              <span key={t} className="mono-label whitespace-nowrap text-primary">
-                ● {t}
-              </span>
-            ),
-          )}
+          {["SMKP", "ISO 45001", "ISO 14001", "ISO 9001", "SMK3", "BNSP POP", "TOT L3"].map((t) => (
+            <span key={t} className="mono-label whitespace-nowrap text-primary">
+              ● {t}
+            </span>
+          ))}
         </div>
       </div>
     </section>

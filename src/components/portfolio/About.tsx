@@ -19,7 +19,7 @@ export function About() {
     >
       <div className="swiss-container">
         <div className="swiss-grid">
-          <div className="lg:col-span-4">
+          <div className="col-span-full lg:col-span-4">
             <div className="lg:sticky lg:top-28">
               <span className="mono-label text-secondary">§ 03 — Profile</span>
               <h2
@@ -31,7 +31,7 @@ export function About() {
             </div>
           </div>
 
-          <div className="mt-10 lg:col-span-7 lg:col-start-6 lg:mt-0">
+          <div className="col-span-full mt-10 lg:col-span-7 lg:col-start-6 lg:mt-0">
             <p className="text-2xl font-medium leading-snug text-primary md:text-3xl md:leading-[1.2]">
               I am an HSE professional with practical experience in mining, power plant
               construction, and manufacturing industries.
@@ -51,8 +51,8 @@ export function About() {
             </ul>
 
             <p className="mt-10 max-w-2xl border-l-2 border-secondary pl-5 text-base leading-relaxed text-muted-foreground">
-              I believe sustainable safety performance is built through strong systems,
-              competent people, and measurable accountability.
+              I believe sustainable safety performance is built through strong systems, competent
+              people, and measurable accountability.
             </p>
           </div>
         </div>

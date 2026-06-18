@@ -14,7 +14,7 @@ export function Community() {
     >
       <div className="swiss-container">
         <header className="swiss-grid mb-14">
-          <div className="lg:col-span-6">
+          <div className="col-span-full lg:col-span-6">
             <span className="mono-label text-secondary">§ 07 — Community</span>
             <h2
               id="comm-title"
@@ -33,9 +33,7 @@ export function Community() {
               key={i.org}
               className="flex flex-col justify-between gap-4 border-b border-rule p-6 md:p-8 sm:[&:nth-child(odd)]:border-r min-h-[160px]"
             >
-              <span className="mono-label text-secondary">
-                {String(idx + 1).padStart(2, "0")}
-              </span>
+              <span className="mono-label text-secondary">{String(idx + 1).padStart(2, "0")}</span>
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wider text-primary">
                   {i.role}
